@@ -31,12 +31,12 @@ const path = require("path")
 
     //pratos
     app.get('/pratos', function (req, res){
-        res.render('user/prato/pratos');
+        res.render('prato/pratos');
     });
 
     //pedidos
     app.get('/pedidos', function (req, res){
-        res.render('user/pedido/pedidos');
+        res.render('pedido/pedidos');
     });
 
 const PORT = 8082
