@@ -1,7 +1,6 @@
 <center><h3>Pratos</h3></center>
-<div class="container">
 <input class="form-control" id="pesquisar" type="text" placeholder="Search..">
-<div class="row" id="myDIV">
+<div class="row" id="pratos">
     <div class="col-sm container mt-4">
          <div class="card" style="width: 21.7rem;">
             <img class="card-img-top" src="https://t1.rg.ltmcdn.com/pt/images/3/8/4/lasanha_de_carne_moida_com_molho_vermelho_7483_600.jpg" alt="Imagem de capa do card"/>
@@ -18,7 +17,7 @@
             <img class="card-img-top" src="https://t1.rg.ltmcdn.com/pt/images/3/8/4/lasanha_de_carne_moida_com_molho_vermelho_7483_600.jpg" alt="Imagem de capa do card"/>
             <div class="card-body">
                 <h5 class="card-title">Macarronada</h5>
-                <p class="card-text">amo Macarronada.</p>
+                <p class="card-text">amo lasanha.</p>
                 <a href="#" class="btn btn-dark">Go Eat</a>
             </div>
         </div>
@@ -29,7 +28,7 @@
             <img class="card-img-top" src="https://t1.rg.ltmcdn.com/pt/images/3/8/4/lasanha_de_carne_moida_com_molho_vermelho_7483_600.jpg" alt="Imagem de capa do card"/>
             <div class="card-body">
                 <h5 class="card-title">Baiao</h5>
-                <p class="card-text">amo Baiao.</p>
+                <p class="card-text">amo lasanha.</p>
                 <a href="#" class="btn btn-dark">Go Eat</a>
             </div>
         </div>
@@ -39,8 +38,8 @@
          <div class="card" style="width: 21.7rem;">
             <img class="card-img-top" src="https://t1.rg.ltmcdn.com/pt/images/3/8/4/lasanha_de_carne_moida_com_molho_vermelho_7483_600.jpg" alt="Imagem de capa do card"/>
             <div class="card-body">
-                <h5 class="card-title"id="myDIV">Arroz Agrego</h5>
-                <p class="card-text">amo Arroz.</p>
+                <h5 class="card-title">Arroz Agrego</h5>
+                <p class="card-text">amo lasanha.</p>
                 <a href="#" class="btn btn-dark">Go Eat</a>
             </div>
         </div>
@@ -62,22 +61,10 @@
             <img class="card-img-top" src="https://t1.rg.ltmcdn.com/pt/images/3/8/4/lasanha_de_carne_moida_com_molho_vermelho_7483_600.jpg" alt="Imagem de capa do card"/>
             <div class="card-body">
                 <h5 class="card-title">Pudin</h5>
-                <p class="card-text">amo Pudin.</p>
+                <p class="card-text">amo lasanha.</p>
                 <a href="#" class="btn btn-dark">Go Eat</a>
             </div>
         </div>
     </div>
     
-</div>  
-</div>
-
-<script>
-  $(document).ready(function(){
-  $("#pesquisar").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myDIV .card").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
+</div>    
