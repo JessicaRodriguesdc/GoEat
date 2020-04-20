@@ -1,0 +1,19 @@
+{
+  "name": "goeat",
+  "version": "1.0.0",
+  "description": "aplicaçâo criada para facilitar a gestão de estabelecimentos de comida ",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "author": "Jéssica Rodrigues da Costa",
+  "license": "ISC"
+}
