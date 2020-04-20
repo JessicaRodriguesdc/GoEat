@@ -20,6 +20,11 @@ const path = require("path")
         res.render('index');
     });
 
+    //adm
+    app.get('/painel-adm',function(req,res){
+        res.render('adm/index')
+    })
+
     //user
     app.get('/logar', function (req, res) {
         res.render('user/asseco/login');
