@@ -34,6 +34,11 @@ const path = require("path")
         res.render('user/prato/pratos');
     });
 
+    //pedidos
+    app.get('/pedidos', function (req, res){
+        res.render('user/pedido/pedidos');
+    });
+
 const PORT = 8082
 app.listen(PORT,()=>{
     console.log("Servidor rodando!")
