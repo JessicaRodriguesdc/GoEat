@@ -15,6 +15,7 @@ const path = require("path")
     // Public
     app.use(express.static(path.join(__dirname, "public")));  
 
+    //Rotas do projeto "por enquanto"
     //home
     app.get('/', function (req, res) {
         res.render('index');
@@ -46,6 +47,6 @@ const path = require("path")
 
 const PORT = 8082
 app.listen(PORT,()=>{
-    console.log("Servidor rodando!")
+    console.log("Servidor rodando!, Go Eat")
     console.log(PORT)
 }) 
