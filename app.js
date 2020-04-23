@@ -45,6 +45,32 @@ const path = require("path")
         res.render('pedido/pedidos');
     });
 
+
+    // ADM
+    // estoque
+    app.get('/painel-adm/estoque',function(req,res){
+        res.render('adm/index')
+    })
+
+    // pedidos
+    app.get('/painel-adm/pedidos',function(req,res){
+        res.render('adm/index')
+    })
+
+    // pratos
+    app.get('/painel-adm/pratos',function(req,res){
+        res.render('adm/index')
+    })
+
+    // usuarios
+    app.get('/painel-adm/clientes',function(req,res){
+        res.render('adm/users/clientes')
+    })
+    app.get('/painel-adm/funcionarios',function(req,res){
+        res.render('adm/users/funcionarios')
+    })
+
+
 const PORT = 8082
 app.listen(PORT,()=>{
     console.log("Servidor rodando!, Go Eat")
