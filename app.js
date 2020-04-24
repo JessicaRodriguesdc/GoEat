@@ -63,9 +63,20 @@ const path = require("path")
     })
 
     // usuarios
+    //cliente
     app.get('/painel-adm/clientes',function(req,res){
-        res.render('adm/users/clientes')
+        res.render('adm/users/clientes/clientes')
     })
+    app.get('/painel-adm/cliente-novo',function(req,res){
+        res.render('adm/users/clientes/clienteNovo')
+    })
+    app.get('/painel-adm/cliente-editar',function(req,res){
+        res.render('adm/users/clientes/clienteEditar')
+    })
+    app.get('/painel-adm/cliente-excluir',function(req,res){
+        res.render('adm/users/clientes/clienteExcluir')
+    })
+    //funcionario
     app.get('/painel-adm/funcionarios',function(req,res){
         res.render('adm/users/funcionarios')
     })
