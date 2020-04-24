@@ -78,7 +78,16 @@ const path = require("path")
     })
     //funcionario
     app.get('/painel-adm/funcionarios',function(req,res){
-        res.render('adm/users/funcionarios')
+        res.render('adm/users/funcionarios/funcionarios')
+    })
+    app.get('/painel-adm/funcionario-novo',function(req,res){
+        res.render('adm/users/funcionarios/funcionarioNovo')
+    })
+    app.get('/painel-adm/funcionario-editar',function(req,res){
+        res.render('adm/users/funcionarios/funcionarioEditar')
+    })
+    app.get('/painel-adm/funcionario-excluir',function(req,res){
+        res.render('adm/users/funcionarios/funcionarioExcluir')
     })
 
 
