@@ -1,1 +1,107 @@
 <center><h3>Estoque</h3></center>
+
+<div class="row" style="background-color: #f3efe3;">
+    <div class="col-md-2 container mt-4">
+         <div style="width: 100%;">
+            <div class="form-group mt-5">
+                <a href="/painel-adm/estoques-novo"><button type="button" class="btn btn-dark" style="width: 13rem;">Novo Produto</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 container mt-4">
+         <div style="width: 100%;">
+            <center><h4>Produtos</h4></center>
+            <br>
+            <table class="table" id="tabelaFuncionario">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Data da Compra</th>
+                <th scope="col">Data de Validade</th>
+                <th scope="col">Edita</th>
+                <th scope="col">Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Arroz</td>
+                <td>100</td>
+                <td>18/10/1999</td>
+                <td>18/10/1999</td>
+                <td><a href="/painel-adm/estoques-editar">Editar</a></td>
+                <td><a href="/painel-adm/estoques-excluir">Deletar</a></td>
+                </tr>
+                <tr>
+                <td>Arroz</td>
+                <td>100</td>
+                <td>18/10/1999</td>
+                <td>18/10/1999</td>
+                <td><a href="/painel-adm/estoques-editar">Editar</a></td>
+                <td><a href="/painel-adm/estoques-excluir">Deletar</a></td>
+                </tr>
+                <tr>
+                <td>Arroz</td>
+                <td>100</td>
+                <td>18/10/1999</td>
+                <td>18/10/1999</td>
+                <td><a href="/painel-adm/estoques-editar">Editar</a></td>
+                <td><a href="/painel-adm/estoques-excluir">Deletar</a></td>
+                </tr>
+                <tr>
+                <td>Arroz</td>
+                <td>100</td>
+                <td>18/10/1999</td>
+                <td>18/10/1999</td>
+                <td><a href="/painel-adm/estoques-editar">Editar</a></td>
+                <td><a href="/painel-adm/estoques-excluir">Deletar</a></td>
+                </tr>
+                <tr>
+                <td>Arroz</td>
+                <td>100</td>
+                <td>18/10/1999</td>
+                <td>18/10/1999</td>
+                <td><a href="/painel-adm/estoques-editar">Editar</a></td>
+                <td><a href="/painel-adm/estoques-excluir">Deletar</a></td>
+                </tr>
+                <tr>
+                <td>Arroz</td>
+                <td>100</td>
+                <td>18/10/1999</td>
+                <td>18/10/1999</td>
+                <td><a href="/painel-adm/estoques-editar">Editar</a></td>
+                <td><a href="/painel-adm/estoques-excluir">Deletar</a></td>
+                </tr>
+                <tr>
+                <td>Arroz</td>
+                <td>100</td>
+                <td>18/10/1999</td>
+                <td>18/10/1999</td>
+                <td><a href="/painel-adm/estoques-editar">Editar</a></td>
+                <td><a href="/painel-adm/estoques-excluir">Deletar</a></td>
+                </tr>
+            </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+          
+</div>
+<br>   
+
+
+<script>
+  $(document).ready(function(){
+      $('#tabelaFuncionario').DataTable({
+          "language": {
+                "lengthMenu": "Mostrando _MENU_ produtos por página",
+                "zeroRecords": "Nada encontrado",
+                "info": "Mostrando página _PAGE_ de _PAGES_",
+                "infoEmpty": "Nenhum registro disponível",
+                "infoFiltered": "(filtrado de _MAX_ registros no total)"
+            }
+        });
+  });
+  </script>
