@@ -90,6 +90,20 @@ const path = require("path")
         res.render('adm/users/funcionarios/funcionarioExcluir')
     })
 
+     //estoques
+    app.get('/painel-adm/estoques',function(req,res){
+        res.render('adm/users/estoques/estoques')
+    })
+    app.get('/painel-adm/estoques-novo',function(req,res){
+        res.render('adm/users/estoques/estoqueNovo')
+    })
+    app.get('/painel-adm/estoques-editar',function(req,res){
+        res.render('adm/users/estoques/estoqueEditar')
+    })
+    app.get('/painel-adm/estoques-excluir',function(req,res){
+        res.render('adm/users/estoques/estoqueExcluir')
+    })
+
 
 const PORT = 8082
 app.listen(PORT,()=>{
