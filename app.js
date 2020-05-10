@@ -92,16 +92,16 @@ const path = require("path")
 
      //estoques
     app.get('/painel-adm/estoques',function(req,res){
-        res.render('adm/users/estoques/estoques')
+        res.render('adm/estoque/estoques')
     })
     app.get('/painel-adm/estoques-novo',function(req,res){
-        res.render('adm/users/estoques/estoqueNovo')
+        res.render('adm/estoque/estoqueNovo')
     })
     app.get('/painel-adm/estoques-editar',function(req,res){
-        res.render('adm/users/estoques/estoqueEditar')
+        res.render('adm/estoque/estoqueEditar')
     })
     app.get('/painel-adm/estoques-excluir',function(req,res){
-        res.render('adm/users/estoques/estoqueExcluir')
+        res.render('adm/estoque/estoqueExcluir')
     })
 
 
