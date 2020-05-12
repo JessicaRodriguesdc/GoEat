@@ -104,6 +104,35 @@ const path = require("path")
         res.render('adm/estoque/estoqueExcluir')
     })
 
+    //pedidos
+    app.get('/painel-adm/pedidos',function(req,res){
+        res.render('adm/pedido/pedidos')
+    })
+    app.get('/painel-adm/pedidos-novo',function(req,res){
+        res.render('adm/pedido/pedidosNovo')
+    })
+    app.get('/painel-adm/pedidos-editar',function(req,res){
+        res.render('adm/pedido/pedidosEditar')
+    })
+    app.get('/painel-adm/pedidos-excluir',function(req,res){
+        res.render('adm/pedido/pedidosExcluir')
+    })
+
+    //pratos
+    app.get('/painel-adm/pratos',function(req,res){
+        res.render('adm/prato/index')
+    })
+    app.get('/painel-adm/pratos-novo',function(req,res){
+        res.render('adm/prato/pratosNovo')
+    })
+    app.get('/painel-adm/pratos-editar',function(req,res){
+        res.render('adm/prato/pratosEditar')
+    })
+    app.get('/painel-adm/pratos-excluir',function(req,res){
+        res.render('adm/prato/pratosExcluir')
+    })
+
+
 
 const PORT = 8082
 app.listen(PORT,()=>{
