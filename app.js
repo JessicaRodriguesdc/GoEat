@@ -104,6 +104,19 @@ const path = require("path")
         res.render('adm/estoque/estoqueExcluir')
     })
 
+    //pedidos
+    app.get('/painel-adm/pedidos',function(req,res){
+        res.render('adm/pedidos/pedidos')
+    })
+    app.get('/painel-adm/pedidos-novo',function(req,res){
+        res.render('adm/pedidos/pedidosNovo')
+    })
+    app.get('/painel-adm/pedidos-editar',function(req,res){
+        res.render('adm/pedidos/pedidosEditar')
+    })
+    app.get('/painel-adm/pedidos-excluir',function(req,res){
+        res.render('adm/pedidos/pedidosExcluir')
+    })
 
 const PORT = 8082
 app.listen(PORT,()=>{
