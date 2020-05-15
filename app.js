@@ -120,7 +120,7 @@ const path = require("path")
 
     //pratos
     app.get('/painel-adm/pratos',function(req,res){
-        res.render('adm/prato/index')
+        res.render('adm/prato/pratos')
     })
     app.get('/painel-adm/pratos-novo',function(req,res){
         res.render('adm/prato/pratosNovo')
