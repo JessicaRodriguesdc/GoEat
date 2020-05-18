@@ -4,6 +4,9 @@ const handlebars = require('express-handlebars')
 const bodyParser = require("body-parser")
 const app = express()
 const path = require("path")
+const adm = require("./routes/adm/adm")
+const user = require("./routes/user/user")
+
 
     // Body Parser
     app.use(bodyParser.urlencoded({ extended: true }));
@@ -132,6 +135,10 @@ const path = require("path")
     //     res.render('adm/prato/pratosExcluir')
     // })
 
+
+    app.use('/admin',adm);
+
+    app.use("/usuario",user);
 
 
 const PORT = 8082

@@ -1,20 +1,24 @@
+const express = require('express')
+const router = express.Router();
+// const app = express()    
+    
     //user
-    app.get('/logar', function (req, res) {
+    router.get('/logar', function (req, res) {
         res.render('user/asseco/login');
     });
 
-    app.get('/cadastrar', function (req, res) {
+    router.get('/cadastrar', function (req, res) {
         res.render('user/asseco/registrar');
     });
 
-
-    
     //pratos
-    app.get('/pratos', function (req, res){
+    router.get('/pratos', function (req, res){
         res.render('prato/pratos');
     });
 
     //pedidos
-    app.get('/pedidos', function (req, res){
+    router.get('/pedidos', function (req, res){
         res.render('pedido/pedidos');
     });
+
+    module.exports = router
