@@ -1,28 +1,51 @@
 <div class="col-md-7" style="width: 700px; margin: 0 auto;">
   <h3>Editar Produto</h3>
-  <form>
+  <br>
+ <form>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputEmail4">Produto</label>
-        <input type="text" class="form-control" id="inputProduto" placeholder="Produto">
+        <label for="labelPrato">Prato</label>
+        <select id="inputPrato" class="form-control">
+          <option selected>Escolher...</option>
+          <option>Lasanha</option>
+          <option>Coxinha</option>
+          <option>Pizza</option>
+        </select>
       </div>
       <div class="form-group col-md-6">
-        <label for="inputEmail4">Quantidade</label>
-        <input type="number" class="form-control" id="inputQuantidade" placeholder="0">
+        <label for="labelCliente">Cliente</label>
+        <select id="inputCliente" class="form-control">
+          <option selected>Escolher...</option>
+          <option>Jessica</option>
+          <option>Marcelino</option>
+          <option>Angelica</option>
+        </select>
       </div>
     </div>
     
     <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputAddress">Data da Compra</label>
-        <input type="date" class="form-control" id="inputDCompra" placeholder="00/00/0000">
+      <div class="form-group col-md-3">
+        <label for="labelStatus">Status</label>
+        <select id="inputStatus" class="form-control">
+          <option selected>Escolher...</option>
+          <option>Andamento</option>
+          <option>Pronto</option>
+        </select>
       </div>
       <div class="form-group col-md-6">
-        <label for="inputAddress">Data da Validade</label>
-        <input type="date" class="form-control" id="inputDValidade" placeholder="00/00/0000">
+        <label for="labelPreco">Preço</label>
+        <input type="number" class="form-control" id="inputPreco" placeholder="0">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="labelTipo">Tipo</label>
+        <select id="inputTipo" class="form-control">
+          <option selected>Escolher...</option>
+          <option>Estabelecimento</option>
+          <option>Entrega</option>
+        </select>
       </div>
     </div>
     <br>   
-    <button type="submit" class="btn btn-dark">Cadastrar</button>
+    <button type="submit" class="btn btn-dark">Atualizar</button>
   </form>
 </div>

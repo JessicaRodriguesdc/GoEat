@@ -1,28 +1,37 @@
 <div class="col-md-7" style="width: 700px; margin: 0 auto;">
   <h3>Editar Produto</h3>
+  <br>
   <form>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputEmail4">Produto</label>
+        <label for="labelProduto">Produto</label>
         <input type="text" class="form-control" id="inputProduto" placeholder="Produto">
       </div>
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Quantidade</label>
+      <div class="form-group col-md-3">
+        <label for="labelQuantidade">Quantidade</label>
         <input type="number" class="form-control" id="inputQuantidade" placeholder="0">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="labelTipoProduto">Tipo do Produto</label>
+        <select id="inputTipoProduto" class="form-control">
+          <option selected>Escolher...</option>
+          <option>...</option>
+        </select>
       </div>
     </div>
     
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputAddress">Data da Compra</label>
+        <label for="labelDataCompra">Data da Compra</label>
         <input type="date" class="form-control" id="inputDCompra" placeholder="00/00/0000">
       </div>
       <div class="form-group col-md-6">
-        <label for="inputAddress">Data da Validade</label>
+        <label for="labelDataVenda">Data da Validade</label>
         <input type="date" class="form-control" id="inputDValidade" placeholder="00/00/0000">
       </div>
     </div>
+
     <br>   
-    <button type="submit" class="btn btn-dark">Cadastrar</button>
+    <button type="submit" class="btn btn-dark">Atualizar</button>
   </form>
 </div>

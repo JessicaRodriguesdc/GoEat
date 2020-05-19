@@ -4,18 +4,27 @@
     <div class="col-md-2 container mt-4">
          <div style="width: 100%;">
             <div class="form-group mt-5">
-                <a href="/painel-adm/pedidos-novo"><button type="button" class="btn btn-dark" style="width: 13rem;">Novo Pedido</button></a>
-                <br><br>
-                <a href="/painel-adm/pedidos-dia"><button type="button" class="btn btn-dark" style="width: 13rem;">Pedidos do dia</button></a>
+                <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">Quantidade de Pedidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>120</td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
         </div>
     </div>
 
-    <div class="col-md-8 container mt-4">
+   <div class="col-md-8 container mt-4">
          <div style="width: 100%;">
             <center><h4>Pedidos</h4></center>
             <br>
-            <table class="table" id="tabelaPedidos">
+            <table class="table" id="tabelaPedidosDia">
             <thead class="thead-dark">
                 <tr>
                 <th scope="col">Pedido</th>
@@ -91,7 +100,7 @@
 
 <script>
   $(document).ready(function(){
-      $('#tabelaPedidos').DataTable({
+      $('#tabelaPedidosDia').DataTable({
           "language": {
                 "lengthMenu": "Mostrando _MENU_ pedidos por página",
                 "zeroRecords": "Nada encontrado",
@@ -102,3 +111,4 @@
         });
   });
   </script>
+
