@@ -16,6 +16,10 @@ const router = express.Router();
         res.render('prato/pratos');
     });
 
+    router.get('/pratos/realizar-pedido', function (req, res){
+        res.render('prato/realizarPedido');
+    });
+
     //pedidos
     router.get('/pedidos', function (req, res){
         res.render('pedido/pedidos');

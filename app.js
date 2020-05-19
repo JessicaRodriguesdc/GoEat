@@ -25,9 +25,9 @@ const user = require("./routes/user/user")
     });
 
     //adm
-    app.get('/painel-adm',function(req,res){
-        res.render('adm/index')
-    })
+    // app.get('/painel-adm',function(req,res){
+    //     res.render('adm/index')
+    // })
 
     //user
     // app.get('/logar', function (req, res) {
@@ -136,9 +136,9 @@ const user = require("./routes/user/user")
     // })
 
 
-    app.use('/admin',adm);
+    app.use(adm);
 
-    app.use("/usuario",user);
+    app.use(user);
 
 
 const PORT = 8082

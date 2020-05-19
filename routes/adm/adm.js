@@ -3,20 +3,11 @@ const router = express.Router();
 // const app = express()
 
 // ADM
-    // estoque
-    router.get('/painel-adm/estoque',function(req,res){
-        res.render('adm/index')
-    })
+// painel do adm 
 
-    // pedidos
-    router.get('/painel-adm/pedidos',function(req,res){
-        res.render('adm/index')
-    })
-
-    // pratos
-    router.get('/painel-adm/pratos',function(req,res){
-        res.render('adm/index')
-    })
+router.get('/painel-adm',function(req,res){
+    res.render('adm/index')
+})
 
     // usuarios
     //cliente
@@ -53,6 +44,9 @@ const router = express.Router();
     router.get('/painel-adm/estoques-novo',function(req,res){
         res.render('adm/estoque/estoqueNovo')
     })
+    router.get('/painel-adm/estoques-tipo',function(req,res){
+        res.render('adm/estoque/estoqueTipo')
+    })
     router.get('/painel-adm/estoques-editar',function(req,res){
         res.render('adm/estoque/estoqueEditar')
     })
@@ -64,11 +58,19 @@ const router = express.Router();
     router.get('/painel-adm/pedidos',function(req,res){
         res.render('adm/pedido/pedidos')
     })
+
+    router.get('/painel-adm/pedidos-dia',function(req,res){
+        res.render('adm/pedido/pedidosDia')
+    })
+
     router.get('/painel-adm/pedidos-novo',function(req,res){
         res.render('adm/pedido/pedidosNovo')
     })
     router.get('/painel-adm/pedidos-editar',function(req,res){
         res.render('adm/pedido/pedidosEditar')
+    })
+    router.get('/painel-adm/pedidos-status',function(req,res){
+        res.render('adm/pedido/pedidosStatus')
     })
     router.get('/painel-adm/pedidos-excluir',function(req,res){
         res.render('adm/pedido/pedidosExcluir')

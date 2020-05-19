@@ -5,6 +5,8 @@
          <div style="width: 100%;">
             <div class="form-group mt-5">
                 <a href="/painel-adm/estoques-novo"><button type="button" class="btn btn-dark" style="width: 13rem;">Novo Produto</button></a>
+                <br><br>
+                <a href="/painel-adm/estoques-tipo"><button type="button" class="btn btn-dark" style="width: 13rem;">Novo tipo de produto</button></a>
             </div>
         </div>
     </div>
@@ -13,7 +15,7 @@
          <div style="width: 100%;">
             <center><h4>Produtos</h4></center>
             <br>
-            <table class="table" id="tabelaFuncionario">
+            <table class="table" id="tabelaEstoque">
             <thead class="thead-dark">
                 <tr>
                 <th scope="col">Produto</th>
@@ -94,7 +96,7 @@
 
 <script>
   $(document).ready(function(){
-      $('#tabelaFuncionario').DataTable({
+      $('#tabelaEstoque').DataTable({
           "language": {
                 "lengthMenu": "Mostrando _MENU_ produtos por página",
                 "zeroRecords": "Nada encontrado",
