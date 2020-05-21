@@ -1,10 +1,8 @@
 const express = require('express')
 const router = express.Router();
-// const app = express()
 
 // ADM
 // painel do adm 
-
 router.get('/painel-adm',function(req,res){
     res.render('adm/index')
 })
@@ -23,6 +21,7 @@ router.get('/painel-adm',function(req,res){
     router.get('/painel-adm/cliente-excluir',function(req,res){
         res.render('adm/users/clientes/clienteExcluir')
     })
+
     //funcionario
     router.get('/painel-adm/funcionarios',function(req,res){
         res.render('adm/users/funcionarios/funcionarios')

@@ -1,6 +1,5 @@
 const express = require('express')
-const router = express.Router();
-// const app = express()    
+const router = express.Router();    
     
     //user
     router.get('/logar', function (req, res) {

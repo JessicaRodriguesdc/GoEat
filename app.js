@@ -18,7 +18,6 @@ const user = require("./routes/user/user")
     // Public
     app.use(express.static(path.join(__dirname, "public")));  
 
-    //Rotas do projeto "por enquanto"
     //home
     app.get('/', function (req, res) {
         res.render('index');
