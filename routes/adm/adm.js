@@ -37,7 +37,7 @@ router.get('/painel-adm',function(req,res){
     })
 
      //estoques
-     router.get('/painel-adm/estoques',function(req,res){
+    router.get('/painel-adm/estoques',function(req,res){
         res.render('adm/estoque/estoques')
     })
     router.get('/painel-adm/estoques-novo',function(req,res){
