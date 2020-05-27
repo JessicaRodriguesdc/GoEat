@@ -5,6 +5,8 @@ const bodyParser = require("body-parser")
 const app = express()
 const path = require("path")
 const adm = require("./routes/adm/adm")
+const admCliente = require("./routes/adm/usuario/cliente")
+const admFuncionario = require("./routes/adm/usuario/funcionario")
 const user = require("./routes/user/user")
 
 
@@ -24,6 +26,10 @@ const user = require("./routes/user/user")
     });
 
     app.use(adm);
+
+    app.use(admCliente);
+
+    app.use(admFuncionario);
 
     app.use(user);
 
