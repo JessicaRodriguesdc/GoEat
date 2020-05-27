@@ -12,29 +12,29 @@ router.get('/painel-adm',function(req,res){
     router.get('/painel-adm/clientes',function(req,res){
         res.render('adm/users/clientes/clientes')
     })
-    router.get('/painel-adm/cliente-novo',function(req,res){
-        res.render('adm/users/clientes/clienteNovo')
-    })
-    router.get('/painel-adm/cliente-editar',function(req,res){
-        res.render('adm/users/clientes/clienteEditar')
-    })
-    router.get('/painel-adm/cliente-excluir',function(req,res){
-        res.render('adm/users/clientes/clienteExcluir')
-    })
+    // router.get('/painel-adm/cliente-novo',function(req,res){
+    //     res.render('adm/users/clientes/clienteNovo')
+    // })
+    // router.get('/painel-adm/cliente-editar',function(req,res){
+    //     res.render('adm/users/clientes/clienteEditar')
+    // })
+    // router.get('/painel-adm/cliente-excluir',function(req,res){
+    //     res.render('adm/users/clientes/clienteExcluir')
+    // })
 
     //funcionario
     router.get('/painel-adm/funcionarios',function(req,res){
         res.render('adm/users/funcionarios/funcionarios')
     })
-    router.get('/painel-adm/funcionario-novo',function(req,res){
-        res.render('adm/users/funcionarios/funcionarioNovo')
-    })
-    router.get('/painel-adm/funcionario-editar',function(req,res){
-        res.render('adm/users/funcionarios/funcionarioEditar')
-    })
-    router.get('/painel-adm/funcionario-excluir',function(req,res){
-        res.render('adm/users/funcionarios/funcionarioExcluir')
-    })
+    // router.get('/painel-adm/funcionario-novo',function(req,res){
+    //     res.render('adm/users/funcionarios/funcionarioNovo')
+    // })
+    // router.get('/painel-adm/funcionario-editar',function(req,res){
+    //     res.render('adm/users/funcionarios/funcionarioEditar')
+    // })
+    // router.get('/painel-adm/funcionario-excluir',function(req,res){
+    //     res.render('adm/users/funcionarios/funcionarioExcluir')
+    // })
 
      //estoques
     router.get('/painel-adm/estoques',function(req,res){

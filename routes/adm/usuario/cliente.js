@@ -1,10 +1,6 @@
 const express = require('express')
 const router = express.Router();
 
-
-router.get('/painel-adm/clientes',function(req,res){
-    res.render('adm/users/clientes/clientes')
-})
 router.get('/painel-adm/cliente-novo',function(req,res){
     res.render('adm/users/clientes/clienteNovo')
 })
