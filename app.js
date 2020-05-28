@@ -7,6 +7,9 @@ const path = require("path")
 const adm = require("./routes/adm/adm")
 const admCliente = require("./routes/adm/usuario/cliente")
 const admFuncionario = require("./routes/adm/usuario/funcionario")
+const admEstoque = require("./routes/adm/produto/estoque")
+const admPedido = require("./routes/adm/produto/pedido")
+const admPrato = require("./routes/adm/produto/prato")
 const user = require("./routes/user/user")
 
 
@@ -30,6 +33,13 @@ const user = require("./routes/user/user")
     app.use(admCliente);
 
     app.use(admFuncionario);
+
+    app.use(admEstoque);
+
+    app.use(admPedido);
+
+    app.use(admPrato);
+
 
     app.use(user);
 
