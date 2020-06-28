@@ -3,11 +3,11 @@ const routerUser = express.Router();
     
     //user
     routerUser.get('/logar', function (req, res) {
-        res.render('user/asseco/login');
+        res.render('user/login');
     });
 
     routerUser.get('/cadastrar', function (req, res) {
-        res.render('user/asseco/registrar');
+        res.render('user/registrar');
     });
 
     //pratos

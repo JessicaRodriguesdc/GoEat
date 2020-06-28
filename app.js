@@ -42,10 +42,9 @@ const user = require("./routes/user/user")
 
 
     app.use(user);
-
-
-const PORT = 8082
-app.listen(PORT,()=>{
-    console.log("Servidor rodando!, Go Eat")
-    console.log(PORT)
-}) 
+    
+    const PORT = process.env.PORT || 8082
+    app.listen(PORT,()=>{
+        console.log("Servidor rodando!")
+        console.log(PORT)
+    }) 
