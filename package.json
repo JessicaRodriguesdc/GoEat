@@ -12,8 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./app.js"
   },
   "author": "Jéssica Rodrigues da Costa",
