@@ -19,9 +19,16 @@ const user = require("./routes/user/user")
    // Handlebars
     app.engine("handlebars", handlebars({ defaultLayout: "main" }));
     app.set("view engine", "handlebars");
+    app.set ('views', 'views')
+    app.use (shop)
 
     // Public
     app.use(express.static(path.join(__dirname, "public")));  
+
+    app.use ((req, res, next) => {
+        // res.sendFile (path.join (__ dirname, 'views', 'notfound.html'))
+        res.render ('notfound')
+        })
 
     //home
     app.get('/', function (req, res) {
