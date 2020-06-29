@@ -19,8 +19,7 @@ const user = require("./routes/user/user")
    // Handlebars
     app.engine("handlebars", handlebars({ defaultLayout: "main" }));
     app.set("view engine", "handlebars");
-    app.set ('views', 'views')
-    app.use (shop)
+    app.set('views', __dirname + '/views');
 
     // Public
     app.use(express.static(path.join(__dirname, "public")));  
@@ -49,7 +48,7 @@ const user = require("./routes/user/user")
 
 
     app.use(user);
-    
+
     const PORT = process.env.PORT || 8082
     app.listen(PORT,()=>{
         console.log("Servidor rodando!")
