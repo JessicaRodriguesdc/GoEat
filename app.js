@@ -12,7 +12,6 @@ const admPedido = require("./routes/adm/produto/pedido")
 const admPrato = require("./routes/adm/produto/prato")
 const user = require("./routes/user/user")
 
-
     // Body Parser
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
@@ -20,14 +19,8 @@ const user = require("./routes/user/user")
     app.engine("handlebars", handlebars({ defaultLayout: "main" }));
     app.set("view engine", "handlebars");
     app.set('views', __dirname + '/views');
-
     // Public
     app.use(express.static(path.join(__dirname, "public")));  
-
-    app.use ((req, res, next) => {
-        // res.sendFile (path.join (__ dirname, 'views', 'notfound.html'))
-        res.render ('notfound')
-        })
 
     //home
     app.get('/', function (req, res) {
