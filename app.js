@@ -22,6 +22,11 @@ const user = require("./routes/user/user")
     // Public
     app.use(express.static(path.join(__dirname, "public")));  
 
+    //app.use ((req, res, next) => {
+        // res.sendFile (path.join (__ dirname, 'views', 'notfound.html'))
+        //res.render ('notfound')
+      //  })
+
     //home
     app.get('/', function (req, res) {
         res.render('index');
